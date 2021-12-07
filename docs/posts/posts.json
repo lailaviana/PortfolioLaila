@@ -15,5 +15,22 @@
     "preview": {},
     "last_modified": "2021-12-07T11:48:08-03:00",
     "input_file": {}
+  },
+  {
+    "path": "posts/2021-12-07-anlise-da-base-rais/",
+    "title": "AnÃ¡lise da base RAIS",
+    "description": "Essa análise teve como objetivo analisar os salários na base da RAIS. Esse projeto foi feito na Semana de Data Science na Prática da Curso-R.",
+    "author": [
+      {
+        "name": "Laila Viana",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-07",
+    "categories": [],
+    "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-12-07T12:14:51-03:00",
+    "input_file": "anlise-da-base-rais.knit.md"
   }
 ]
