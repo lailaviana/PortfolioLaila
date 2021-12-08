@@ -1,5 +1,5 @@
 ---
-title: "AnÃ¡lise da base RAIS"
+title: "Análise da base RAIS"
 description: |
   Essa análise teve como objetivo analisar os salários na base da RAIS. Esse projeto foi feito na Semana de Data Science na Prática da Curso-R.
 author:
@@ -15,8 +15,18 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
+Esse é o meu **primeiro projeto** no portfólio
 
-Learn more about using Distill at <https://rstudio.github.io/distill>.
+```{r}
+library(bigrquery)
+library(dplyr)
+
+bigrquery::bq_auth("lailavalmeida@gmail.com")
+
+conexao <- dbConnect( bigquery(), project = "basedosdados", dataset = "br_me_rais", billing = "semana-data-science")
+
+primeiras_cinco_linhas <- collect(head(select(tbl(conexao, "microdados_vinculos"), everything()), 5))
+```
+
 
 
